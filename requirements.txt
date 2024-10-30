@@ -1,0 +1,11 @@
+tensorflow	== 2.12.0		# build and train CNN
+flask		== 2.1.2		# create API >> inference
+streamlit	== 1.23.0		# create Web Interface
+numpy		== 1.23.5		# model manipulation as array
+pandas		== 1.5.3		# Data
+matplotlib	== 3.7.1		# Visual
+scikit-learn	== 1.3.0	# AI model Eva.
+pillow		== 9.4.0		# Image organization
+google-cloud-storage == 2.8.0	# Google Cloud >> deployment
+//fastapi             		# in case ถ้าต้องการใช้ FastAPI แทน Flask
+//uvicorn             		# in case run FastAPI
