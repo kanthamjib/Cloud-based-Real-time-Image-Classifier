@@ -1,7 +1,7 @@
 cloud-image-classifier/
 │
 ├── data/
-│   └── dataset_loader.py		# dataset input and handling
+│   └── dataset.py		# dataset input and handling
 │
 ├── models/
 │   ├── cnn_model.py			# CNN training
