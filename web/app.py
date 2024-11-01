@@ -20,7 +20,7 @@ from PIL import Image
 import io
 
 # URL -> API inferencing (check API "running" status)
-API_URL = "http://localhost:5000/predict"
+API_URL = "http://localhost:5001/predict"
 
 # Web Header
 st.title("Fashion MNIST Image Classifier")

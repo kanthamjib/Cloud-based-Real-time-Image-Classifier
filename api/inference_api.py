@@ -22,17 +22,24 @@ Usage:
 import tensorflow as tf
 from flask import Flask, request, jsonify
 import numpy as np
-from ..utils.helper_functions import preprocess_image, decode_predictions
+from utils.helper_functions import preprocess_image, decode_predictions
 
 # create Flask app
 app = Flask(__name__)
 
+import os
 # Call for the trained Model.
-model = tf.keras.models.load_model("fashion_mnist_cnn_model.h5")
+model_path = os.path.join(os.path.dirname(__file__), '../fashion_mnist_cnn_model.h5')
+model = tf.keras.models.load_model(model_path)
 
 # define the class's name of Fashion MNIST
 class_names = ["T-shirt", "Trouser", "Pullover", "Dress", "Coat", "Sandal",
 			"Shirt", "Sneaker", "Bag", "Ankle boot"]
+
+# Route for home
+@app.route("/")
+def home():
+    return "Welcome to the Fashion MNIST Image Classifier API! Use /predict to classify an image."
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -54,4 +61,4 @@ def predict():
     return jsonify({"predicted_class": predicted_class})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5001, debug=True)
