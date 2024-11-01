@@ -1,0 +1,27 @@
+2024-11-01 18:18:39.868577: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2024-11-01 18:18:40.247124: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2024-11-01 18:18:40.249891: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-11-01 18:18:48.397019: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+ * Serving Flask app 'inference_api' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://192.168.0.172:5001/ (Press CTRL+C to quit)
+ * Restarting with watchdog (inotify)
+2024-11-01 18:19:09.290827: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+ * Debugger is active!
+ * Debugger PIN: 595-513-063
+ * Detected change in '/mnt/c/Users/jubji/Documents/GitHub/Cloud-based-Real-time-Image-Classifier/data/dataset.py', reloading
+ * Detected change in '/mnt/c/Users/jubji/Documents/GitHub/Cloud-based-Real-time-Image-Classifier/main.py', reloading
+ * Detected change in '/mnt/c/Users/jubji/Documents/GitHub/Cloud-based-Real-time-Image-Classifier/models/cnn_model.py', reloading
+ * Detected change in '/mnt/c/Users/jubji/Documents/GitHub/Cloud-based-Real-time-Image-Classifier/models/model_evaluation.py', reloading
+ * Detected change in '/mnt/c/Users/jubji/Documents/GitHub/Cloud-based-Real-time-Image-Classifier/test_imports.py', reloading
+ * Detected change in '/mnt/c/Users/jubji/Documents/GitHub/Cloud-based-Real-time-Image-Classifier/utils/helper_functions.py', reloading
+ * Restarting with watchdog (inotify)
+2024-11-01 18:23:09.541863: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+ * Debugger is active!
+ * Debugger PIN: 595-513-063

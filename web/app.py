@@ -47,6 +47,7 @@ if uploaded_file is not None:
         # display the result from API
         if response.status_code == 200:
             result = response.json()
-            st.write(f"Predicted Class: **{result['predicted_class']}**")
+            st.write(result)
+            #t.write(f"Predicted Class: **{result['predicted_class']}**")
         else:
             st.write("Error: Unable to get a prediction.")
